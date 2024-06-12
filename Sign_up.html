@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-step Registration Form</title>
+    <link rel="stylesheet" href="Assets/CSS/reg.css">
+</head>
+<body>
+    <div class="container">
+        <div class="progress-bar">
+            <div class="step">
+                <div class="bullet active">1</div>
+                <p>Account</p>
+            </div>
+            <div class="step">
+                <div class="bullet">2</div>
+                <p>Profile</p>
+            </div>
+            <div class="step">
+                <div class="bullet">3</div>
+                <p>Finish</p>
+            </div>
+        </div>
+        <form class="registration-form" id="registrationForm">
+            <!-- Step 1: Account Details -->
+            <div class="form-section active">
+                <h2>Account Details</h2>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+            <!-- Step 2: Profile Information -->
+            <div class="form-section">
+                <h2>Profile Information</h2>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+            <!-- Step 3: Confirm Password -->
+            <div class="form-section">
+                <h2>Confirm Password</h2>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <script src="Assets/JS/script.js"></script>
+</body>
+</html>
+
